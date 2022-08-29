@@ -1,0 +1,170 @@
+/* reset */
+:root {
+    --brand-color : #fff;
+    --bg-color : #CAB3E2;
+    --pc-header-height: 112px;
+    /* --mobile-header-height: 112px; */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#main-header{
+        width: 100%;
+        height: 112px;
+        z-index: 10;
+        text-align: center;
+        background: #fff;
+        position: relative;
+}
+
+#main-header .container {
+    position: relative;
+}
+
+#main-header h1 {
+    padding-left: 10px;
+    padding-top: 10px;
+    float: left;
+}
+
+#main-header nav {
+    width: 850px;
+    float: right;
+    text-align: center;
+}
+
+#main-header nav ul.gnb {
+    width: 100%;
+}
+
+#main-header nav ul.gnb>li {
+    width: 20%;
+    float: left;
+    position: relative;
+    height: 112px;
+    line-height: 34px;
+}
+
+#main-header nav ul.gnb>li>a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    font-size: 24px;
+}
+
+/* section01 */
+#section01-yt{
+    height: 982px;
+}
+
+/* section02 */
+#section02-music{
+    height: 982px;
+    background: #fcf9eb;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper {
+    width: 1320px;
+    /* display: flex; */
+  }
+
+  .swiper-slide {
+    padding-top: 50px;
+  }
+
+
+/* section03 */
+#section03-drama{
+    height: 982px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.container-drama{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 150px;
+}
+
+.dm{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+/* section04 */
+#section04-performance{
+    height: 982px;
+    background: #FFF1DD;
+}
+
+.performance-container {
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#section04-performance .performance-header{
+    font-size: 18px;
+    width: 100%;  
+    padding-left: 50px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#section04-performance img{
+    width: 100%;
+}
+
+#section04-performance .col .pf {
+    font-weight: 500;
+    font-size: 32px;
+    text-align: center;
+}
+
+#section04-performance .col p {
+    font-weight: 300;
+    font-size: 30px;
+    text-align: center;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    height: 148px;
+    background: #fff;
+    padding-top: 20px;
+}
+
+.icon-box{
+    text-align: center;
+    padding-left: 16px;
+    font-size: 28px;
+}
+
+.icon-box i{
+    color: black;
+}
+
+.footer-container p{
+    text-align: center;
+    font-size: 22px;
+}
