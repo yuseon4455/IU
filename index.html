@@ -16,7 +16,6 @@
     <!-- pc.css -->
     <link rel="stylesheet" href="./" media="screen and (min-width: 768px)">
      <!-- jquery -->
-     <script src="js/main.js"></script>
 <!-- section02 -->
 <meta
       name="viewport"
@@ -27,6 +26,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+ <script src="js/main.js"></script>
 <style>
   @keyframes rainbow-ani {
       100% {
@@ -98,21 +99,34 @@
                     <div class="swiper-slide"><img src="./images/ms9.jpg" alt=""><p><strong>Real</strong></p>
                       <p>
                         2010.12.9</p></div>
+                        <div class="swiper-pagination"></div>
           </div>
         </div>
     </section>
     
 
     <section id="section03-drama">
+      <article class="container-tv">
       <div class="container-drama">
         <h1>
           <img src="./images/drama-bg.jpg" class="drama-bg" alt="">
       </h1>
-      <div class="dm">
-        <p>드라마</p>
-      </div>
+        <p class="dm">드라마</p>
       </div>
       <div class="rainbow"></div>
+      <div class="container-movie">
+      <div class="swiper mySwiper swiper2 ">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="./images/movie1.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./images/movie2.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./images/movie3.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./images/movie4.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./images/movie5.jpg" alt=""></div>
+        </div>
+        <p class="dm">영화</p>
+      </div>
+      </div>
+      </article>
     </section>
 
     <section id="section04-performance">
@@ -159,6 +173,13 @@
       var swiper = new Swiper(".mySwiper", {
         watchSlidesProgress: true,
         slidesPerView: 3,
+      });
+    </script>
+
+     <script>
+      var swiper = new Swiper(".swiper2", {
+        effect: "cards",
+        grabCursor: true,
       });
     </script>
 </body>
