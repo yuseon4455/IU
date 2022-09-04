@@ -114,26 +114,51 @@ a {
     display: flex;
     text-align: center;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
+
 .container-tv{
-    width: 1500px;
+    width: 1200px;
     display: flex;
     text-align: center;
     align-items: center;
-    outline: 1px solid red;
+    justify-content: space-between;
+    /* outline: 1px solid red; */
+}
+
+.container-drama{
+    position: relative;
+    padding-top: 100px;
+    padding-left: 120px;
+}
+
+.img1{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 600px;
+    top: 0;
 }
 
 .dm{
     font-weight: 600;
     font-size: 20px;
     padding-top: 20px;
+    /* outline: 1px solid red; */
+}
+
+.dm1{
+    width:50%;
+    font-weight: 600;
+    font-size: 20px;
+    padding-top: 45px;
+    /* outline: 1px solid red; */
 }
 
 .swiper2 {
     width: 348px;
     height: 495px;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 
 .swiper-slide {
@@ -172,9 +197,11 @@ a {
     font-weight: 500;
     font-size: 32px;
     text-align: center;
+    padding-top: 10px;
 }
 
 #section04-performance .col p {
+    padding-top: 20px;
     font-weight: 300;
     font-size: 30px;
     text-align: center;
